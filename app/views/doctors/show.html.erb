@@ -5,5 +5,5 @@
 Appointments:
   <% @doctor.appointments.each do |appointment| %>
     <%= link_to appointment.doctor.name, doctor_path(appointment.doctor) %>
-    <%= pluralize(appointment.patients.count, 'Patient' %>
+    <%= pluralize(appointment.patients.count, 'Patient') %>
   <% end %>
