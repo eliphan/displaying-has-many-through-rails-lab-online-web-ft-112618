@@ -7,6 +7,3 @@ class CreateAppointments < ActiveRecord::Migration
     end
   end
 end
-      t.string :content
-      t.belongs_to :user
-      t.belongs_to :post
