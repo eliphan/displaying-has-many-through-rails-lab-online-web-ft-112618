@@ -1,0 +1,11 @@
+
+<h2><%= @patient.name %></h2>
+<p>
+  Doctor: <% @patient.doctors.each do |doctor| %>
+    <%= link_to 
+</p>
+Comments:
+  <% @post.comments.each do |comment| %>
+    <%= link_to comment.user.username, user_path(comment.user) %> said
+    <%= comment.content %>
+  <% end %>
