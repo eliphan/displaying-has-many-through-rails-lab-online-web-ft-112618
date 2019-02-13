@@ -3,8 +3,5 @@
   Doctor: <% @patient.appointments.each do |appt| %>
     <%= link_to appt.doctor.name, doctor_path(appt.doctor)
 </p>
-Comments:
-  <% @post.comments.each do |comment| %>
-    <%= link_to comment.user.username, user_path(comment.user) %> said
-    <%= comment.content %>
+
   <% end %>
