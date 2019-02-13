@@ -1,8 +1,7 @@
-
 <h2><%= @patient.name %></h2>
 <p>
   Doctor: <% @patient.doctors.each do |doctor| %>
-    <%= link_to 
+    <%= link_to doctor.patient.name, doctor_path(doctor)
 </p>
 Comments:
   <% @post.comments.each do |comment| %>
