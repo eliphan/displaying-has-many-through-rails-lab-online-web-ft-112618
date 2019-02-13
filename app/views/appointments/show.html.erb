@@ -1,5 +1,6 @@
-<%= @appointment.appointment_datetime %>
+<%= @appointment.appointment_datetime.strftime("%m%d,%Y "%>
 <%= @appointment.doctor.name %>
 <%= @appointment.patient.name %>
 
 
+d.strftime("Printed on %m/%d/%Y")
