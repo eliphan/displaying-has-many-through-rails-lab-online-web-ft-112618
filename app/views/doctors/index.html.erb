@@ -2,9 +2,11 @@
   <ul>
     <li>
       Name: <%= doctor.name %>
+      Number of Appointment:
+        <%= pluralize (doctor.appointments.count, 'Appointment') %>
     </li>
   </ul>
-
+<% end %>
 
 
 <% end %>
