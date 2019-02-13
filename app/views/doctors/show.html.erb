@@ -4,6 +4,6 @@
 </p>
 Appointments:
   <% @doctor.appointments.each do |appointment| %>
-    <%= link_to appointment.doctor.username, user_path(comment.user) %> said
+    <%= link_to appointment.doctor.name, doctor_path(appointment.doctor) %>
     <%= comment.content %>
   <% end %>
