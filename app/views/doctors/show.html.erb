@@ -1,9 +1,0 @@
-<h2><%= @doctor.name %></h2>
-<p>
-  Department: <%= @doctor.department %>
-</p>
-Appointments:
-  <% @doctor.appointments.each do |appointment| %>
-    <%= link_to appointment.doctor.name, doctor_path(appointment.doctor) %>
-    <%= pluralize(appointment.patients.count, 'Patient') %>
-  <% end %>
